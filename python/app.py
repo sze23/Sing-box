@@ -23,17 +23,17 @@ config = {
     'NEZHA_SERVER': os.environ.get('NEZHA_SERVER', ''), # 哪吒面板地址，v1格式: nezha.xxx.com:8008  v0格式： nezha.xxx.com
     'NEZHA_PORT': os.environ.get('NEZHA_PORT', ''),     # 哪吒v1请留空，哪吒v0 agent端口
     'NEZHA_KEY': os.environ.get('NEZHA_KEY', ''),       # 哪吒v1的NZ_CLIENT_SECRET或哪吒v0-agent密钥
-    'ARGO_DOMAIN': os.environ.get('ARGO_DOMAIN', ''),   # 固定隧道域名,留空即启用临时隧道
-    'ARGO_AUTH': os.environ.get('ARGO_AUTH', ''),       # 固定隧道token或json,留空即启用临时隧道,json获取:https://json.zone.id
-    'ARGO_PORT': os.environ.get('ARGO_PORT', '8001'),   # argo端口 使用固定隧道token,cloudflare后台设置的端口需和这里对应
+    'ARGO_DOMAIN': os.environ.get('ARGO_DOMAIN', 'hiden.870826.xyz'),   # 固定隧道域名,留空即启用临时隧道
+    'ARGO_AUTH': os.environ.get('ARGO_AUTH', 'eyJhIjoiNDllNWRkYTU2YWE4MzJhZDM4NmEyY2Q2NDgzMmQ2YTEiLCJ0IjoiMDJhNDMxZmUtYjBjNi00ZDM5LTkwYjEtNTA3ZjVmZjQ2MmY3IiwicyI6IlpqQXdaREE0TWpJdE5ESXhNaTAwWWpnNUxXRXlaR1l0WldZNE5UQmlPVFZqTlRjMCJ9'),       # 固定隧道token或json,留空即启用临时隧道,json获取:https://json.zone.id
+    'ARGO_PORT': os.environ.get('ARGO_PORT', '8080'),   # argo端口 使用固定隧道token,cloudflare后台设置的端口需和这里对应
     'CFIP': os.environ.get('CFIP', 'saas.sin.fan'),     # 优选域名或优选ip
     'CFPORT': os.environ.get('CFPORT', '443'),          # 优选域名或优选ip对应端口
     'NAME': os.environ.get('NAME', ''),                 # 节点备注
-    'S5_PORT': os.environ.get('S5_PORT', ''),           # socks5端口,支持多端口玩具可填写，否则不动
-    'HY2_PORT': os.environ.get('HY2_PORT', ''),         # Hy2 端口，支持多端口玩具可填写，否则不动
+    'S5_PORT': os.environ.get('S5_PORT', '25396'),           # socks5端口,支持多端口玩具可填写，否则不动
+    'HY2_PORT': os.environ.get('HY2_PORT', '24602'),         # Hy2 端口，支持多端口玩具可填写，否则不动
     'TUIC_PORT': os.environ.get('TUIC_PORT', ''),        # Tuic 端口，支持多端口玩具可填写，否则不动 
     'ANYTLS_PORT': os.environ.get('ANYTLS_PORT', ''),    # AnyTLS 端口,支持多端口玩具可填写，否则不动
-    'REALITY_PORT': os.environ.get('REALITY_PORT', ''),      # Reality 端口,支持多端口玩具可填写，否则不动
+    'REALITY_PORT': os.environ.get('REALITY_PORT', '25396'),      # Reality 端口,支持多端口玩具可填写，否则不动
     'ANYREALITY_PORT': os.environ.get('ANYREALITY_PORT', ''), # AnyReality 端口,支持多端口玩具可填写，否则不动
     'CHAT_ID': os.environ.get('CHAT_ID', ''),                 # TG chat_id，可在https://t.me/laowang_serv00_bot 获取
     'BOT_TOKEN': os.environ.get('BOT_TOKEN', ''),             # TG bot_token, 使用自己的bot需要填写,使用上方的bot不用填写,不会给别人发送
